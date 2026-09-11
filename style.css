@@ -1,0 +1,271 @@
+/*Cabeçalho e nome do site*/
+h1 {
+
+    height: 87px;
+
+    background: linear-gradient(to right, #cc6077, #d99baa);
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 12px;
+
+    margin-bottom: 50px;
+
+}
+
+/* Muda as configurações padrão */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Página toda */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #dfdfdf;
+    color: #000000;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Logo */
+
+body > img {
+    width: 94px;
+    height: 92px;
+    object-fit: contain;
+
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+
+/* Nome do site */
+
+body > h1 {
+    height: 97px;
+    width: 100%;
+
+    background: linear-gradient(to right, #e994a5, #d8798e);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    font-family: Georgia, serif;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+
+/* Formulário e margem */
+
+#formConsulta {
+    width: 280px;
+
+    margin-top: 32px;
+
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Título */
+
+#formConsulta h2 {
+    color: #d63856;
+    font-size: 17px;
+    font-weight: normal;
+
+    margin-bottom: 20px;
+}
+
+
+#formConsulta label {
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+
+/* Campos */
+
+input,
+select {
+    width: 280px;
+    height: 34px;
+
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+    background-color: white;
+
+    padding: 0 9px;
+
+    font-size: 10px;
+    color: #333;
+
+    outline: none;
+}
+
+
+/* Espaçamento dos campos */
+
+#cep {
+    margin-bottom: 38px;
+}
+
+#cidade {
+    margin-bottom: 27px;
+}
+
+
+/* Foco */
+
+input:focus,
+select:focus {
+    border-color: #d8798e;
+    box-shadow: 0 0 3px rgba(216, 121, 142, 0.4);
+}
+
+
+/* Botão para consultar */
+
+button {
+    width: 118px;
+    height: 38px;
+
+    align-self: center;
+
+    background-color: #c83e59;
+
+    color: white;
+
+    border: none;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #ad3049;
+}
+
+
+/* Campo para mensagem */
+
+#mensagem {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+
+/* Rodapé */
+
+footer {
+    width: 100%;
+    height: 87px;
+
+    margin-top: auto;
+
+    background: linear-gradient(to right, #cc6077, #d99baa);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    font-size: 12px;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+#resultado {
+      width: 270px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 2px solid #a5a5a5;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(161, 20, 74, 0.15);
+    line-height: 1.8;
+}
+
+#linkmaps {
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+p {
+ text-align: center;
+ color: #000000;
+}
+
+a {
+     text-align: center;
+     color: #cc2f6b;
+     text-decoration: none;
+}
+
+#resultado a {
+    color: #c23f5b;
+    text-decoration: none;
+}
+
+/* Para funcionar em celular */
+
+@media (max-width: 600px) {
+
+    body > img {
+        width: 75px;
+        height: 80px;
+        left: 10px;
+    }
+
+    body > h1 {
+        height: 90px;
+        font-size: 15px;
+    }
+
+    #formConsulta {
+        width: 90%;
+    }
+
+    input,
+    select {
+        width: 100%;
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+    }
+}

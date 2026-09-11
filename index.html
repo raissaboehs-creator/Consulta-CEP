@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1f5c99">
+    <link rel="apple-touch-icon" href="docs/AcheCep_192x192.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+</head>
+<body>
+
+   <img src="c:\Users\raissa_boehs\Downloads\logo.png.png" alt="Logo" width="100"> <!--Imagem da logo-->
+
+    <h1><em>AcheCep</em></h1> <!--Nome do site-->
+
+    <form id="formConsulta">
+        <h2>Preencha as informações necessárias:</h2> <!--Informando o que fazer-->
+ <label for="cep">Digite o CEP:</label>
+ <input id="cep" type="text" inputmode="numeric" 
+ maxlength="9" placeholder="Ex:01001-000" required> <!--Campo para escrever o CEP-->
+ <label for="cidade">Digite a cidade:</label>
+ <input id="cidade" type="text"
+ placeholder="Ex:São Paulo" required> <!--Campo para escrever a cidade-->
+ <button type="submit">Consultar Endereço</button> <!--Botão para consultar-->
+</form>
+<p id="mensagem" role="status" aria-live="polite"></p> <!--Resultado da pesquisa-->
+<script src="index.js"></script>
+
+<footer> <!--Rodapé-->
+    <p> &copy; 2026. Desenvolvido por Raissa Boehs. Todos os direitos foram reservados.</p>
+</footer>
+
+</body>
+</html>
